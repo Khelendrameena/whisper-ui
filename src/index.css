@@ -28,7 +28,7 @@ body { font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: anti
 }
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
-.anim-fadeUp { animation: fadeUp .45s cubic-bezier(.21,1.02,.73,1) both; }
+.anim-fadeUp { animation: fadeUp .45s cubic-bezier(.21,1.02,.73,1); }
 .anim-d1 { animation-delay: .08s; } .anim-d2 { animation-delay: .16s; } .anim-d3 { animation-delay: .24s; }
 
 @keyframes typingBounce { 0%,100% { transform: translateY(0); opacity:.4 } 50% { transform: translateY(-4px); opacity:1 } }
