@@ -1,10 +1,18 @@
-import { MessageCircle } from "./components/Icons";
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import Landing from "./pages/Landing";
+import About from "./pages/About";
+import ChatUI from "./pages/ChatUI";
+// import "./index.css";
+
 export default function App() {
+  const [page, setPage] = useState("home");
   return (
-    <div style={{ background: "#080810", color: "white", minHeight: "100vh", padding: 40 }}>
-      <h1>Icon Test</h1>
-      <MessageCircle size={32} className="test" />
-      <p>If you see an icon above, Icons work!</p>
+    <div className="min-h-screen bg-scene text-zinc-100">
+      <Navbar onNav={setPage} page={page} />
+      {page === "home" && <Landing onStart={() => setPage("chat")} />}
+      {page === "about" && <About onBack={() => setPage("home")} />}
+      {page === "chat" && <ChatUI onBack={() => setPage("home")} />}
     </div>
   );
 }
