@@ -1,8 +1,10 @@
+import { MessageCircle } from "./components/Icons";
 export default function App() {
   return (
     <div style={{ background: "#080810", color: "white", minHeight: "100vh", padding: 40 }}>
-      <h1 style={{ fontSize: 32 }}>Whisper Test</h1>
-      <p>If you see this, React is working!</p>
+      <h1>Icon Test</h1>
+      <MessageCircle size={32} className="test" />
+      <p>If you see an icon above, Icons work!</p>
     </div>
   );
 }
