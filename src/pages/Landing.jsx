@@ -1,4 +1,4 @@
-import { ShieldCheck, Users, MessageSquare, Zap, EyeOff, Globe2 } from "lucide-react";
+import { ShieldCheck, Users, MessageSquare, Zap, EyeOff, Globe2 } from "../components/Icons";
 
 const FEATURES = [
   { icon: EyeOff, title: "Anonymous Chat", desc: "No accounts, no names, no tracking. Just pure conversation." },

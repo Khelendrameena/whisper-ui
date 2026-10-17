@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   Send, Smile, SkipForward, Square, Flag, Search,
   MessageCircle, ChevronLeft, MoreVertical, ShieldCheck,
-} from "lucide-react";
+} from "../components/Icons";
 
 const MOCK_MESSAGES = [
   { from: "stranger", text: "hey! where are you from? 🌍", at: "21:41" },

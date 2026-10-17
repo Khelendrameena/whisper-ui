@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Moon, Sun, MessageCircle, Menu, X } from "lucide-react";
+import { Moon, Sun, MessageCircle, Menu, X } from "./Icons";
 
 export default function Navbar({ onNav, page }) {
   const [dark, setDark] = useState(true);
